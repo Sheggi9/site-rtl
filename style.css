@@ -1,0 +1,120 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, input, p, blockquote, table, th, td, embed, object {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+input {outline:none;}
+ul {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.0em;
+}
+
+a, ins {
+    text-decoration: none;
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.nav-menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-menu > ul > li{
+    margin: 15px 15px;
+    padding: 15px 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+}
+
+.nav-menu > ul > li:hover{
+    transition: all 0.5s ease;
+    background: #d4c89c;
+    color: #ffffff;
+    border: 1px solid #a5996f;
+}
+
+
+.logo{
+    min-height: 120px;
+    min-width: 120px;
+    border-radius: 60px;
+    font-size: 50px;
+    cursor: pointer;
+    background: #d4c89c;
+    border: 1px solid #a5996f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background, color 0.2s linear 0.1s;
+}
+
+.logo:hover{
+    background: #e4d8ab;
+    color: #cfaa26;
+    border: 1px solid #cfaa26;;
+}
+
+.nav-menu-input{
+    max-width: 280px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 0 40px;
+}
+
+.nav-menu-search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-menu-search-img > img{
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.nav-menu-search-img{
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    cursor: pointer;
+}
+
+
+input[placeholder]{
+    text-overflow:ellipsis;
+}
+
+.nav-menu-input::-webkit-input-placeholder{
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+}
+
+.nav-menu-input:focus::-webkit-input-placeholder{
+    text-indent: -100px;
+    transition: text-indent 0.3s ease;
+}
+
+
+
+html.rtl .rtl-text{
+    unicode-bidi:bidi-override;
+    direction: RTL;
+}
+
